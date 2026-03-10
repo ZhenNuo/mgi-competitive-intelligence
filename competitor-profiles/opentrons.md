@@ -13,25 +13,33 @@
 | **成立时间** | 2014 年 |
 | **定位** | 开源液体处理机器人 |
 | **官网** | opentrons.com |
+| **融资情况** | 多轮融资 (红杉、ARCH 等) |
+| **核心优势** | 开源生态、低成本、易用性 |
 
 ---
 
 ## 🧬 核心产品线
 
 ### 液体处理机器人
-- OT-2 液体处理机器人
-- OT-3 新一代机器人（待发布）
+- **OT-2** - 主力液体处理机器人 (8 通道/单通道移液器)
+- **OT-3** - 新一代机器人 (开发中)
 
 ### 模块系统
-- 温度控制模块
-- 磁力分离模块
-- 震荡混合模块
-- 加热冷却模块
+- 温度控制模块 (Temperature Module)
+- 磁力分离模块 (Magnetic Module)
+- 震荡混合模块 (Thermomixer)
+- 加热冷却模块 (HEPA Module)
+
+### 耗材
+- 吸头 (Filter Tips/Regular Tips)
+- 96 孔板/384 孔板
+- 储液槽
 
 ### 软件生态
-- Opentrons App
-- Python API
-- 开源协议库
+- **Opentrons App** - 图形化操作界面
+- **Python API** - 编程接口
+- **Protocol Library** - 开源协议库
+- **Opentrons Cloud** - 云端管理 (可选)
 
 ---
 
