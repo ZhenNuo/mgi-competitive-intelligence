@@ -51,7 +51,7 @@ mgi-competitive-intelligence/
 
 | 报告类型 | 频率 | 交付物 |
 |----------|------|--------|
-| 三周日报 | 每 3 周 1 期 | HTML + Markdown + 数据源说明 |
+| 三日报 | 每 3 天 1 期 | HTML + Markdown + 数据源说明 |
 | 三周总结报告 | 每 3 周 1 份 | HTML + Markdown + 全周期数据台账 |
 
 ---
@@ -72,4 +72,4 @@ mgi-competitive-intelligence/
 
 ---
 
-*最后更新：2026-03-10*
+*最后更新：2026-03-11*
