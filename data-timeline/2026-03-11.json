@@ -1,0 +1,100 @@
+{
+  "date": "2026-03-11",
+  "report_type": "三日报",
+  "period_start": "2026-03-08",
+  "period_end": "2026-03-11",
+  "generated_at": "2026-03-11T16:30:00+08:00",
+  "key_events": [
+    {
+      "date": "2026-03-09",
+      "company": "Beckman Coulter",
+      "event": "AI 平台升级",
+      "type": "产品与技术",
+      "confidence": "A",
+      "summary": "选择 Innovaccer Gravity 作为 AI 和数据平台用于临床实验室运营现代化",
+      "source": "BioSpace/PR Newswire"
+    },
+    {
+      "date": "2026-03-04",
+      "company": "MGI",
+      "event": "战略收购",
+      "type": "财务与业绩",
+      "confidence": "A",
+      "summary": "收购 STOmics 和 CycloneSEQ，成为全球唯一覆盖短读长、长读长、空间组学和 GLI 的制造商",
+      "source": "PR Newswire"
+    },
+    {
+      "date": "2026-02-25",
+      "company": "MGI",
+      "event": "2025 业绩快报",
+      "type": "财务与业绩",
+      "confidence": "B",
+      "summary": "亏损同比收窄超 60%，国内市占率约 70%",
+      "source": "智通财经"
+    },
+    {
+      "date": "2026-02-20",
+      "company": "Hamilton",
+      "event": "NGS 合作",
+      "type": "渠道与合作",
+      "confidence": "C",
+      "summary": "与 Ultima Genomics 合作自动化 NGS 样本制备",
+      "source": "Clinical Lab Products"
+    },
+    {
+      "date": "2026-02-10",
+      "company": "Opentrons",
+      "event": "AI 训练计划",
+      "type": "产品与技术",
+      "confidence": "C",
+      "summary": "使用 Nvidia 技术构建实验室物理 AI 训练数据",
+      "source": "GenEngNews"
+    }
+  ],
+  "competitor_status": {
+    "Beckman_Coulter": {
+      "status": "active",
+      "recent_activity": "AI platform modernization",
+      "threat_level": "medium"
+    },
+    "Hamilton": {
+      "status": "active",
+      "recent_activity": "NGS automation partnership",
+      "threat_level": "medium"
+    },
+    "Linken": {
+      "status": "quiet",
+      "recent_activity": "none detected",
+      "threat_level": "low",
+      "note": "information gap"
+    },
+    "Benyao": {
+      "status": "quiet",
+      "recent_activity": "none detected",
+      "threat_level": "low",
+      "note": "information gap"
+    },
+    "Opentrons": {
+      "status": "active",
+      "recent_activity": "AI training development",
+      "threat_level": "medium"
+    },
+    "Tecan": {
+      "status": "active",
+      "recent_activity": "strategic pivot to AI/automation",
+      "threat_level": "medium"
+    },
+    "Xuanren": {
+      "status": "quiet",
+      "recent_activity": "none detected",
+      "threat_level": "low",
+      "note": "information gap"
+    }
+  },
+  "market_indicators": {
+    "lab_automation_market_2033": "18.39 billion USD",
+    "asia_pacific_cagr": "7.72%",
+    "mgi_domestic_market_share": "~70%"
+  },
+  "report_file": "daily-reports/三日报_2026-03-11.md"
+}
