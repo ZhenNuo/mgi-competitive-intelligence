@@ -1,0 +1,396 @@
+# 竞品动态自动追踪配置
+
+**版本**: v1.0  
+**日期**: 2026-03-12  
+**用途**: 配置自动化竞品动态监测
+
+---
+
+## 🔍 监测关键词配置
+
+### 贝克曼 (Beckman Coulter)
+
+```json
+{
+  "brand": "贝克曼",
+  "keywords": [
+    "Beckman Coulter",
+    "贝克曼 库尔特",
+    "Innovaccer Gravity",
+    "贝克曼 AI",
+    "贝克曼 临床实验室",
+    "Beckman automation",
+    "Beckman diagnostics"
+  ],
+  "exclude": [
+    "招聘",
+    "二手",
+    "维修"
+  ],
+  "priority": "high",
+  "channels": ["news", "official", "social", "patent"]
+}
+```
+
+---
+
+### Hamilton
+
+```json
+{
+  "brand": "Hamilton",
+  "keywords": [
+    "Hamilton 公司",
+    "Hamilton 瑞士",
+    "Microlab STAR",
+    "Hamilton NGS",
+    "Ultima Genomics",
+    "Hamilton 液体处理",
+    "Hamilton automation"
+  ],
+  "exclude": [
+    "招聘",
+    "二手"
+  ],
+  "priority": "high",
+  "channels": ["news", "official", "social"]
+}
+```
+
+---
+
+### Tecan
+
+```json
+{
+  "brand": "Tecan",
+  "keywords": [
+    "Tecan",
+    "帝肯",
+    "Fluent BioStack",
+    "Tecan 日本",
+    "Tecan 自动化",
+    "Tecan liquid handling"
+  ],
+  "exclude": [
+    "招聘",
+    "二手"
+  ],
+  "priority": "medium",
+  "channels": ["news", "official"]
+}
+```
+
+---
+
+### Opentrons
+
+```json
+{
+  "brand": "Opentrons",
+  "keywords": [
+    "Opentrons",
+    "欧普特",
+    "Flex 机器人",
+    "Flex Prep",
+    "Opentrons Nvidia",
+    "Opentrons physical AI",
+    "Opentrons open source"
+  ],
+  "exclude": [
+    "二手"
+  ],
+  "priority": "medium",
+  "channels": ["news", "official", "github", "social"]
+}
+```
+
+---
+
+### 领坤 (Linken)
+
+```json
+{
+  "brand": "领坤",
+  "keywords": [
+    "上海领坤",
+    "Linken",
+    "Linken Laboratory",
+    "领坤生物",
+    "领坤 液体处理",
+    "领坤 移液"
+  ],
+  "exclude": [
+    "招聘",
+    "二手"
+  ],
+  "priority": "high",
+  "channels": ["official", "wechat", "bid", "patent"]
+}
+```
+
+---
+
+### 奔耀 (Benyao)
+
+```json
+{
+  "brand": "奔耀",
+  "keywords": [
+    "上海奔耀",
+    "Benyao",
+    "奔耀医疗",
+    "奔耀 自动化",
+    "奔耀 实验室"
+  ],
+  "exclude": [
+    "招聘",
+    "二手"
+  ],
+  "priority": "high",
+  "channels": ["official", "wechat", "bid", "patent"]
+}
+```
+
+---
+
+### 玄刃 (Xuanren)
+
+```json
+{
+  "brand": "玄刃",
+  "keywords": [
+    "玄刃生物",
+    "Xuanren",
+    "玄刃 样本处理",
+    "玄刃 自动化"
+  ],
+  "exclude": [
+    "招聘",
+    "二手"
+  ],
+  "priority": "medium",
+  "channels": ["official", "wechat", "patent"]
+}
+```
+
+---
+
+### MGI (本公司)
+
+```json
+{
+  "brand": "MGI",
+  "keywords": [
+    "华大智造",
+    "MGI Tech",
+    "MGI 测序",
+    "MGI 收购",
+    "STOmics",
+    "CycloneSEQ",
+    "MGI 空间组学",
+    "MGI 纳米孔",
+    "MGI GLI"
+  ],
+  "exclude": [
+    "招聘"
+  ],
+  "priority": "critical",
+  "channels": ["news", "official", "social", "patent", "bid"]
+}
+```
+
+---
+
+## 📡 监测渠道配置
+
+### 新闻源
+
+```json
+{
+  "channel": "news",
+  "sources": [
+    {"name": "BioSpace", "url": "https://www.biospace.com", "rss": null},
+    {"name": "PR Newswire", "url": "https://www.prnewswire.com", "rss": null},
+    {"name": "生物谷", "url": "https://www.bioon.com", "rss": "https://www.bioon.com/rss"},
+    {"name": "医药魔方", "url": "https://www.pharmcube.com", "rss": null},
+    {"name": "动脉网", "url": "https://www.vcbeat.cn", "rss": null},
+    {"name": "仪器信息网", "url": "https://www.instrument.com.cn", "rss": null}
+  ],
+  "check_frequency": "daily",
+  "alert_threshold": "medium"
+}
+```
+
+---
+
+### 招投标源
+
+```json
+{
+  "channel": "bid",
+  "sources": [
+    {"name": "中国政府采购网", "url": "https://www.ccgp.gov.cn", "keywords": ["液体处理", "移液", "实验室自动化"]},
+    {"name": "医械招投标网", "url": "https://www.120med.com", "keywords": ["液体处理", "移液"]},
+    {"name": "千里马招标网", "url": "https://www.qianlima.com", "keywords": ["实验室自动化"]}
+  ],
+  "check_frequency": "daily",
+  "alert_threshold": "high"
+}
+```
+
+---
+
+### 专利源
+
+```json
+{
+  "channel": "patent",
+  "sources": [
+    {"name": "国家知识产权局", "url": "https://www.cnipa.gov.cn", "search_type": "applicant"},
+    {"name": "Google Patents", "url": "https://patents.google.com", "search_type": "assignee"}
+  ],
+  "check_frequency": "weekly",
+  "alert_threshold": "medium"
+}
+```
+
+---
+
+## ⚙️ 自动化规则
+
+### 告警规则
+
+```json
+{
+  "rules": [
+    {
+      "name": "重大战略动态",
+      "conditions": {
+        "keywords": ["收购", "并购", "融资", "上市", "战略合作"],
+        "priority": "critical",
+        "channels": ["news", "official"]
+      },
+      "action": "immediate_alert"
+    },
+    {
+      "name": "产品发布",
+      "conditions": {
+        "keywords": ["发布", "上市", "获批", "注册"],
+        "priority": "high",
+        "channels": ["news", "official"]
+      },
+      "action": "daily_digest"
+    },
+    {
+      "name": "招投标中标",
+      "conditions": {
+        "keywords": ["中标", "成交"],
+        "priority": "high",
+        "channels": ["bid"]
+      },
+      "action": "daily_digest"
+    },
+    {
+      "name": "专利申请",
+      "conditions": {
+        "type": "patent",
+        "priority": "medium",
+        "channels": ["patent"]
+      },
+      "action": "weekly_digest"
+    }
+  ]
+}
+```
+
+---
+
+### 去重规则
+
+```json
+{
+  "deduplication": {
+    "enabled": true,
+    "window_hours": 24,
+    "similarity_threshold": 0.85,
+    "keep_highest_confidence": true
+  }
+}
+```
+
+---
+
+### 置信度自动评级
+
+```json
+{
+  "confidence_auto_rating": {
+    "rules": [
+      {
+        "source_type": "official",
+        "content_type": "announcement",
+        "confidence": "A"
+      },
+      {
+        "source_type": "news",
+        "source_tier": 1,
+        "confidence": "B"
+      },
+      {
+        "source_type": "news",
+        "source_tier": 2,
+        "confidence": "C"
+      },
+      {
+        "source_type": "social",
+        "verified": true,
+        "confidence": "C"
+      },
+      {
+        "source_type": "social",
+        "verified": false,
+        "confidence": "D"
+      }
+    ]
+  }
+}
+```
+
+---
+
+## 📊 输出格式
+
+### 动态摘要格式
+
+```markdown
+## [品牌] 动态 - [日期]
+
+**标题**: [动态标题]
+**来源**: [来源名称] ([日期])
+**链接**: [URL]
+**置信度**: [A/B/C/D]
+**关键词**: [关键词 1, 关键词 2, ...]
+**摘要**: [100-200 字摘要]
+**影响评估**: [高/中/低]
+**建议行动**: [跟进/观察/归档]
+```
+
+---
+
+## 🔧 集成方式
+
+### Cron 定时任务
+
+```bash
+# 每日监测（9:00 AM）
+0 9 * * * ~/Desktop/MGI-Competitive-Intelligence/scripts/auto_monitor.sh daily
+
+# 每周专利监测（周一 9:00 AM）
+0 9 * * 1 ~/Desktop/MGI-Competitive-Intelligence/scripts/auto_monitor.sh patent
+```
+
+---
+
+*配置生成：2026-03-12*  
+*维护：MGI 竞争情报系统*
